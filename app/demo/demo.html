@@ -1,0 +1,28 @@
+<div ng-controller="DemoCtrl as ctrl">
+
+<table border="1">
+    <thead>
+    <tr>
+        <td>Author</td>
+        <td>Title</td>
+    </tr>
+    </thead>
+<tbody>
+    <tr ng-repeat="book in ctrl.books">
+        <td>{{book.author}}</td>
+        <td>{{book.title}}</td>
+    </tr>
+</tbody>
+</table>
+      
+        <input type="text" ng-model="ctrl.person.firstname">
+        <input type="text" ng-model="ctrl.person.lastname">
+        <input type="number" ng-model="ctrl.person.age">
+
+       <p> {{ctrl.result}}</p>
+
+<pre>{{ctrl.person | json }} </pre>
+
+<annee value="person.age"></annee>
+
+</div>
